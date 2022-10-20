@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(212, 212, 164);
+  padding: 0 30px;
+}
+nav h1 {
+  font-size: 2em;
+}
+nav .social-links, nav .nav-links {
+  overflow: hidden;
+  max-height: 0;
+  list-style: none;
+}
+nav .nav-links {
+  flex-direction: row-reverse;
+}
+nav .nav-links li {
+  font-size: 1.5em;
+  padding: 25px 10px;
+  text-align: center;
+}
+nav .nav-links li:hover {
+  cursor: pointer;
+  background-color: white;
+}
+nav .social-links {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+nav .social-links img {
+  width: 30px;
+  height: 30px;
+}
+nav #menu-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+nav #menu-btn img {
+  width: 30px;
+}
+nav #menu-btn-input {
+  display: none;
+}
+nav #menu-btn-input:checked ~ ul {
+  max-height: unset;
+}
+
+#post {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(195, 209, 195);
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2%;
+  gap: 20px;
+}
+
+.label, input, textarea {
+  display: flex;
+  text-align: center;
+  padding: 3px;
+}
+
+.NewImgAdded {
+  height: 120px;
+  width: 200px;
+}
+
+#backgroundImg {
+  width: 100%;
+}
+
+@media (min-width: 650px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-links {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  nav #menu-btn {
+    display: none;
+  }
+  nav .social-links, nav .nav-links {
+    max-height: unset;
+  }
+}/*# sourceMappingURL=style.css.map */
